@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.Avatar?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="765.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TheController">
+    <children>
+      <Button fx:id="yesUpdate" layoutX="663.0" layoutY="567.0" mnemonicParsing="false" onAction="#updateInfo" text="Yes" />
+      <Button fx:id="noButton" layoutX="773.0" layoutY="568.0" mnemonicParsing="false" onAction="#dontUpdate" text="No" />
+      <Text layoutX="55.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Francisco Greenaway's Settings" />
+      <Text layoutX="292.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Francisco Greenaway's Settings">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Avatar fx:id="userAvatar" accessibleText="&quot;Student Avatar&quot;" layoutX="76.0" layoutY="69.0" radius="80.0" translateX="1.0">
+         <image>
+            <Image url="@../../../../../OneDrive/Pictures/IMG_1094.JPG" />
+         </image>
+      </Avatar>
+      <Text fx:id="promptQuestion" layoutX="525.0" layoutY="523.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Would you like to add or update your information?">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="101.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Full Name:" />
+      <Text layoutX="101.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Display Name:" />
+      <Text layoutX="98.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sortable Name:" />
+      <Text layoutX="99.0" layoutY="468.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pronouns:" />
+      <Text layoutX="98.0" layoutY="519.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Language:" />
+      <Text layoutX="96.0" layoutY="580.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time Zone:" />
+      <Text layoutX="101.0" layoutY="633.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email Address(es):" />
+      <Text layoutX="98.0" layoutY="686.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number:" />
+      <TextField fx:id="fullName" layoutX="177.0" layoutY="263.0" text="Francisco Greenaway" />
+      <TextField fx:id="displayName" layoutX="190.0" layoutY="322.0" text="Francisco Greenaway" />
+      <TextField fx:id="sortableName" layoutX="198.0" layoutY="389.0" text="Greenaway, Francisco" />
+      <TextField fx:id="pronoun" layoutX="169.0" layoutY="451.0" text="Alien" />
+      <TextField fx:id="language" layoutX="168.0" layoutY="501.0" text="English" />
+      <TextField fx:id="timeZone" layoutX="171.0" layoutY="563.0" text="Eastern TIme" />
+      <TextField fx:id="emailAddress" layoutX="225.0" layoutY="616.0" text="fggreenaway5519@eagle.fgcu.edu" />
+      <TextField fx:id="phoneNumber" layoutX="200.0" layoutY="669.0" text="239-999-9999" />
+    </children>
+</Pane>
